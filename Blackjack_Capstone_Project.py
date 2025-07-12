@@ -3,14 +3,14 @@ from logo import logo_blackjack
 
 
 def deal_card():
-    """Returs a random card from the deck"""
+    """Returns a random card from the deck"""
     cards = [11, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10]
     card = random.choice(cards)
     return card
 
 
 def calculate_score(cards):
-    """Take a list of cards and returs the score calcuated from the cards"""
+    """Takes a list of cards and returns the score calculated from the cards"""
     if sum(cards) == 21 and len(cards) == 2:
         return 0 
 
